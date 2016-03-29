@@ -1,0 +1,4 @@
+-r tsting.txt
+pip>=8.1.1
+tox>=2.3.1
+wheel>=0.29.0
