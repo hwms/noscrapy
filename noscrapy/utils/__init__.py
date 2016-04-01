@@ -1,5 +1,6 @@
 from .declarative import *
 from .pyquery import *
+from . import json
 import requests
 
 # provide ide convenience for unprovided source equivalents of lxml.etree
