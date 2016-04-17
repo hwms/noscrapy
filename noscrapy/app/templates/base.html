@@ -1,0 +1,8 @@
+{%- extends "bootstrap/base.html" %}
+{% block title %}noscrapy{% endblock %}
+{% import "bootstrap/fixes.html" as fixes %}
+{% block head %}{{super()}}{{fixes.ie8()}}{%- endblock %}
+{% block styles -%}{{super()}}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='app.css')}}">
+{% endblock %}
+{% block navbar %}{{nav.frontend_top.render()}}{% endblock %}

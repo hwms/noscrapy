@@ -36,3 +36,9 @@ def rescrape_sitemap(name):
     sitemap = store.get_sitemap(name)
     scraper = Scraper(queue, sitemap, store)
     scraper.run()
+
+@cli.command(name='app')
+def app():
+    from noscrapy.app import create_app
+    app = create_app()
+    app.run(debug=True)
